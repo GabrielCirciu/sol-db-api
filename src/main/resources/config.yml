@@ -1,0 +1,31 @@
+# Basic db configuration
+database:
+  host: localhost
+  port: 5432
+  database: sol_database
+  username: sol_username
+  password: sol_password
+  pool:
+    maximum-size: 10
+    minimum-idle: 2
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+
+# Task scheduling configuration
+tasks:
+  batch-flush:
+    enabled: true
+    period: 5 # seconds
+  health-check:
+    enabled: true
+    period: 30 # seconds
+  connection-maintenance:
+    enabled: true
+    period: 300 # 5 minutes
+
+# Logging configuration
+logging:
+  level: INFO
+  include-sql: false
+  include-parameters: false
