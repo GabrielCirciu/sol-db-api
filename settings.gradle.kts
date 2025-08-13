@@ -1,1 +1,1 @@
-rootProject.name = "soldbcore"
+rootProject.name = "sol-db-api"

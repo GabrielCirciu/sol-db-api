@@ -4,8 +4,8 @@ plugins {
     id("java")
 }
 
-group = "com.binkibonk"
-version = "0.1.0"
+group = "com.github.binkibonk"
+version = "0.1.2"
 description = "Sol DB Core for PostgreSQL integration"
 
 repositories {
@@ -57,11 +57,11 @@ tasks.processResources {
 tasks.shadowJar {
     archiveBaseName.set(project.name)
     archiveClassifier.set("")
-    relocate("com.github.puregero.multilib", "com.binkibonk.soldbcore.libs.multilib")
-    relocate("com.zaxxer.hikari", "com.binkibonk.soldbcore.libs.hikari")
-    relocate("org.postgresql", "com.binkibonk.soldbcore.libs.postgresql")
-    relocate("kotlinx.coroutines", "com.binkibonk.soldbcore.libs.kotlinx.coroutines")
-    relocate("kotlin", "com.binkibonk.soldbcore.libs.kotlin")
+    relocate("com.github.puregero.multilib", "com.binkibonk.soldbapi.libs.multilib")
+    relocate("com.zaxxer.hikari", "com.binkibonk.soldbapi.libs.hikari")
+    relocate("org.postgresql", "com.binkibonk.soldbapi.libs.postgresql")
+    relocate("kotlinx.coroutines", "com.binkibonk.soldbapi.libs.kotlinx.coroutines")
+    relocate("kotlin", "com.binkibonk.soldbapi.libs.kotlin")
 }
 
 tasks.build {

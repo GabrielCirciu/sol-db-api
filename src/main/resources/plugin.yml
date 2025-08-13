@@ -1,6 +1,6 @@
-name: SolDBCore
+name: sol-db-api
 version: ${version}
-main: com.binkibonk.soldbcore.DatabaseCorePlugin
+main: com.binkibonk.soldbapi.DatabaseCorePlugin
 api-version: 1.20
 description: ${description}
-author: Binkibonk
+author: binkibonk
